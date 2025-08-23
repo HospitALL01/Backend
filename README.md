@@ -2,18 +2,19 @@
 
 ## Group Members
 
--   **Arany Hasan (20220204053)**  
-    <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c.svg" alt="wakatime"></a>
+- **Arany Hasan (20220204053)**  
+  <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c.svg" alt="wakatime"></a>
 
--   **Likhon Saha (20220204065)**  
-    <a href="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c"><img src="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c.svg" alt="wakatime"></a>
+- **Likhon Saha (20220204065)**  
+  Frontend - <a href="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c"><img src="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c.svg" alt="wakatime"></a>  
+  Backend - <a href="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/a4c2c928-ff44-4dc1-9879-aa308965ca34"><img src="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/a4c2c928-ff44-4dc1-9879-aa308965ca34.svg" alt="wakatime"></a>
 
--   **Mahir Faisal (20220204073)**  
-    Frontend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd.svg" alt="wakatime"></a>  
-    Backend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85.svg" alt="wakatime"></a>
--   **Ahmed Nafish Shiam (20220204075)**  
-    Frontend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23.svg" alt="wakatime"></a>  
-    Backend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9.svg" alt="wakatime"></a>
+- **Mahir Faisal (20220204073)**  
+  Frontend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd.svg" alt="wakatime"></a>  
+  Backend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85.svg" alt="wakatime"></a>
+- **Ahmed Nafish Shiam (20220204075)**  
+ Frontend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23.svg" alt="wakatime"></a>  
+ Backend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9.svg" alt="wakatime"></a>
 
 ## Project Description
 
@@ -34,19 +35,19 @@ Beyond diagnostics, the system takes actionable next steps by generating a perso
 
 ## Project Features
 
--   AI symptom checker gives disease recommendations
--   Find doctors by specialty and browse nearby hospital services.
--   Book and manage appointments with doctors directly on the platform.
--   Read and write reviews to choose the right healthcare provider.
--   Request ambulance service from nearby hospitals for urgent situations.
--   Manage personal and professional profiles for patients and doctors.
+- AI symptom checker gives disease recommendations
+- Find doctors by specialty and browse nearby hospital services.
+- Book and manage appointments with doctors directly on the platform.
+- Read and write reviews to choose the right healthcare provider.
+- Request ambulance service from nearby hospitals for urgent situations.
+- Manage personal and professional profiles for patients and doctors.
 
 ## Technology Stack
 
--   **Backend:** Laravel (PHP Framework)
--   **Database:** phpMyAdmin (MySQL)
--   **Frontend:** React JS (JavaScript Library)
--   **Styling:** Tailwind CSS / Bootstrap
+- **Backend:** Laravel (PHP Framework)
+- **Database:** phpMyAdmin (MySQL)
+- **Frontend:** React JS (JavaScript Library)
+- **Styling:** Tailwind CSS / Bootstrap
 
 ## Mock UI Design
 
