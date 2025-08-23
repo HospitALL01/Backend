@@ -1,66 +1,56 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# HospitALL
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Group Members
 
-## About Laravel
+-   **Arany Hasan (20220204053)**  
+    <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c.svg" alt="wakatime"></a>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-   **Likhon Saha (20220204065)**  
+    <a href="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c"><img src="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/8f00d690-ece3-4959-8b8a-1f207db5882c.svg" alt="wakatime"></a>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   **Mahir Faisal (20220204073)**  
+    Frontend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd.svg" alt="wakatime"></a>  
+    Backend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85.svg" alt="wakatime"></a>
+-   **Ahmed Nafish Shiam (20220204075)**  
+    Frontend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23.svg" alt="wakatime"></a>  
+    Backend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9.svg" alt="wakatime"></a>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Project Description
 
-## Learning Laravel
+HospitALL is a smart and unified healthcare management platform.  
+It brings together patient information, doctor coordination, and emergency response.  
+From appointments to real-time alerts, everything stays in sync.  
+The system includes an AI-powered chatbot to assist patients with queries, guidance, and support.  
+HospitALL keeps hospitals connected, efficient, and always ready.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Target Audience
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+This platform serves as a comprehensive ecosystem connecting patients, healthcare providers, and administrators. It enables patients to access medical services, allows doctors to manage their professional profiles, empowers hospitals to oversee facilities and emergency services, and provides administrators with tools to efficiently manage the entire system. In essence, the project integrates all stakeholders within the healthcare landscape, from individuals seeking care to the institutions delivering it.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Core Features (AI-Powered)
 
-## Laravel Sponsors
+Our platform features an intelligent AI diagnostic engine designed to assist users in identifying potential health conditions. Users begin by submitting a detailed description of their symptoms through an Input Query. The AI analyzes this information and returns a comprehensive AI Response that includes a curated list of possible conditions.
+Beyond diagnostics, the system takes actionable next steps by generating a personalized, dynamic list of recommended doctors and diagnostic tests, helping users move seamlessly from symptom awareness to professional medical care
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Project Features
 
-### Premium Partners
+-   AI symptom checker gives disease recommendations
+-   Find doctors by specialty and browse nearby hospital services.
+-   Book and manage appointments with doctors directly on the platform.
+-   Read and write reviews to choose the right healthcare provider.
+-   Request ambulance service from nearby hospitals for urgent situations.
+-   Manage personal and professional profiles for patients and doctors.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Technology Stack
 
-## Contributing
+-   **Backend:** Laravel (PHP Framework)
+-   **Database:** phpMyAdmin (MySQL)
+-   **Frontend:** React JS (JavaScript Library)
+-   **Styling:** Tailwind CSS / Bootstrap
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Mock UI Design
 
-## Code of Conduct
+We have designed the interface using Figma to visualize the layout and interaction flow of our
+application.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Figma Prototype - [HospitALL](https://www.figma.com/make/M6lQqJucpCSkw2tkQ8z2UF/HospitALL--Community-?node-id=0-1&p=f&fullscreen=1)
