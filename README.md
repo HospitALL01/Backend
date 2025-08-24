@@ -11,10 +11,10 @@
   Backend - <a href="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/a4c2c928-ff44-4dc1-9879-aa308965ca34"><img src="https://wakatime.com/badge/user/22faad2d-1547-40c2-96b6-2eaf8210c681/project/a4c2c928-ff44-4dc1-9879-aa308965ca34.svg" alt="wakatime"></a>
 
 - **Mahir Faisal (20220204073)**  
-  Frontend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/4a34596e-d6f6-45af-97e2-5ad3da2c33fd.svg" alt="wakatime"></a>  
-  Backend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/d3be1058-14b0-48ab-b35f-868dffa41b85.svg" alt="wakatime"></a>
+  Frontend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/f8bb163d-67d8-450e-8771-7de51749413a"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/f8bb163d-67d8-450e-8771-7de51749413a.svg" alt="wakatime"></a>    
+  Backend - <a href="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/61cdb88c-c91b-46fa-8e6a-d77aec63baf0"><img src="https://wakatime.com/badge/user/f60b5d2c-a443-490a-8ce6-9166fa25024d/project/61cdb88c-c91b-46fa-8e6a-d77aec63baf0.svg" alt="wakatime"></a>
 - **Ahmed Nafish Shiam (20220204075)**  
- Frontend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/bfa9fe9a-246b-4cd3-96c9-2531d551ad23.svg" alt="wakatime"></a>  
+ Frontend -<a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/9b8bbb29-3a18-467c-b9f8-cb93e6cf3707"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/9b8bbb29-3a18-467c-b9f8-cb93e6cf3707.svg" alt="wakatime"></a>  
  Backend - <a href="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9"><img src="https://wakatime.com/badge/user/a3f2e5b5-e430-45fb-8379-5ef5728e6029/project/a1f2a67e-daff-4565-94b2-886874d878c9.svg" alt="wakatime"></a>
 
 ## Project Description
