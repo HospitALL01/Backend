@@ -3,7 +3,7 @@
 ## Group Members
 
 - **Arany Hasan (20220204053)**  
-  Frontend - <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/93771d3a-5bbd-45b4-8ad1-3c64215ed23c.svg" alt="wakatime"></a>  
+  Frontend - <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/ead1d584-264e-4480-b1e6-6de2e8b10054"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/ead1d584-264e-4480-b1e6-6de2e8b10054.svg" alt="wakatime"></a>    
   Backend - <a href="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/a24836bc-0d71-4837-9ff0-9349914d5b5a"><img src="https://wakatime.com/badge/user/2ad53666-4746-4971-a4a1-c07bf36819a7/project/a24836bc-0d71-4837-9ff0-9349914d5b5a.svg" alt="wakatime"></a>
 
 - **Likhon Saha (20220204065)**  
