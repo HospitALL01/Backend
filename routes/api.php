@@ -4,6 +4,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;  
 
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\DoctorController;
+
 /*
 |----------------------------------------------------------------------
 | API Routes
@@ -23,3 +26,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/check-email', [UserController::class, 'checkEmail']);
+
+Route::post('/patient/register', [PatientController::class, 'register']);
+Route::post('/patient/login', [PatientController::class, 'login']);
+Route::post('/patient/check-email', [PatientController::class, 'checkEmail']);
+
+// Doctor routes
+
+Route::post('/doctor/register', [DoctorController::class, 'register']);
+Route::post('/doctor/login', [DoctorController::class, 'login']);
+Route::post('/doctor/check-email', [DoctorController::class, 'checkEmail']);
