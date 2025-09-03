@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\DoctorInfoController;
 
 /*
 |----------------------------------------------------------------------
@@ -36,3 +37,5 @@ Route::post('/patient/check-email', [PatientController::class, 'checkEmail']);
 Route::post('/doctor/register', [DoctorController::class, 'register']);
 Route::post('/doctor/login', [DoctorController::class, 'login']);
 Route::post('/doctor/check-email', [DoctorController::class, 'checkEmail']);
+
+Route::post('/doctor-info', [DoctorInfoController::class, 'store']);
