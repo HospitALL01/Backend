@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -31,6 +30,13 @@ class DoctorInfoController extends Controller
             'previousPositions' => 'nullable|string|max:255',
         ]);
 
+        // Check if doctor exists by email
+        $existingDoctor = DoctorInfo::where('email', $validatedData['email'])->first();
+
+        if ($existingDoctor) {
+            return response()->json(['message' => 'Doctor with this email already exists'], 400);
+        }
+
         // Create a new doctor entry
         $doctorInfo = new DoctorInfo();
         $doctorInfo->doctor_name = $validatedData['doctorName'];
@@ -51,5 +57,58 @@ class DoctorInfoController extends Controller
 
         // Return a success response
         return response()->json(['message' => 'Doctor information submitted successfully'], 200);
+    }
+
+    /**
+     * Update doctor information in the database.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @param string $email
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function update(Request $request, $email)
+    {
+        // Find the doctor entry by email
+        $doctorInfo = DoctorInfo::where('email', $email)->first();
+
+        if (!$doctorInfo) {
+            return response()->json(['message' => 'Doctor not found'], 404);
+        }
+
+        // Validate incoming data
+        $validatedData = $request->validate([
+            'doctorName' => 'required|string|max:255',
+            'gender' => 'required|string|max:20',
+            'nationality' => 'required|string|max:100',
+            'specialization' => 'required|string|max:255',
+            'licenseNumber' => 'required|string|max:50',
+            'licenseIssueDate' => 'required|date',
+            'hospitalName' => 'required|string|max:255',
+            'yearsOfExperience' => 'required|integer',
+            'phone' => 'required|string|max:15',
+            'email' => 'required|email|max:255',
+            'currentPosition' => 'nullable|string|max:255',
+            'previousPositions' => 'nullable|string|max:255',
+        ]);
+
+        // Update the doctor entry with validated data
+        $doctorInfo->doctor_name = $validatedData['doctorName'];
+        $doctorInfo->gender = $validatedData['gender'];
+        $doctorInfo->nationality = $validatedData['nationality'];
+        $doctorInfo->specialization = $validatedData['specialization'];
+        $doctorInfo->license_number = $validatedData['licenseNumber'];
+        $doctorInfo->license_issue_date = $validatedData['licenseIssueDate'];
+        $doctorInfo->hospital_name = $validatedData['hospitalName'];
+        $doctorInfo->years_of_experience = $validatedData['yearsOfExperience'];
+        $doctorInfo->phone = $validatedData['phone'];
+        $doctorInfo->email = $validatedData['email'];
+        $doctorInfo->current_position = $validatedData['currentPosition'];
+        $doctorInfo->previous_positions = $validatedData['previousPositions'];
+
+        // Save the updated doctor information to the database
+        $doctorInfo->save();
+
+        // Return a success response with the updated data
+        return response()->json(['message' => 'Doctor information updated successfully', 'data' => $doctorInfo], 200);
     }
 }
