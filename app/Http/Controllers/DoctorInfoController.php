@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -12,10 +13,10 @@ class DoctorInfoController extends Controller
      */
     public function index()
     {
-        // সর্বশেষ তৈরির ক্রমে আনলাম (তুমি চাইলে updated_at desc করতে পারো)
+        // Fetch all doctors ordered by created_at (latest first)
         $doctors = DoctorInfo::orderBy('created_at', 'desc')->get();
 
-        // ফ্রন্টএন্ডে ব্যবহারের সুবিধার জন্য কলামগুলোকে সামঞ্জস্যপূর্ণ কী'তে ম্যাপ করে দিচ্ছি
+        // Map data to send as response
         $mapped = $doctors->map(function ($d) {
             return [
                 'doctorName'        => $d->doctor_name,
@@ -50,6 +51,7 @@ class DoctorInfoController extends Controller
             return response()->json(['message' => 'Doctor not found'], 404);
         }
 
+        // Prepare the response data
         $payload = [
             'doctorName'        => $doctorInfo->doctor_name,
             'gender'            => $doctorInfo->gender,
@@ -76,6 +78,7 @@ class DoctorInfoController extends Controller
      */
     public function store(Request $request)
     {
+        // Validate incoming request
         $validatedData = $request->validate([
             'doctorName' => 'required|string|max:255',
             'gender' => 'required|string|max:20',
@@ -91,11 +94,13 @@ class DoctorInfoController extends Controller
             'previousPositions' => 'nullable|string|max:255',
         ]);
 
+        // Check if doctor with the same email exists
         $existingDoctor = DoctorInfo::where('email', $validatedData['email'])->first();
         if ($existingDoctor) {
             return response()->json(['message' => 'Doctor with this email already exists'], 400);
         }
 
+        // Create and store new doctor info
         $doctorInfo = new DoctorInfo();
         $doctorInfo->doctor_name = $validatedData['doctorName'];
         $doctorInfo->gender = $validatedData['gender'];
@@ -120,11 +125,13 @@ class DoctorInfoController extends Controller
      */
     public function update(Request $request, $email)
     {
+        // Fetch doctor by email
         $doctorInfo = DoctorInfo::where('email', $email)->first();
         if (!$doctorInfo) {
             return response()->json(['message' => 'Doctor not found'], 404);
         }
 
+        // Validate incoming request
         $validatedData = $request->validate([
             'doctorName' => 'required|string|max:255',
             'gender' => 'required|string|max:20',
@@ -140,6 +147,7 @@ class DoctorInfoController extends Controller
             'previousPositions' => 'nullable|string|max:255',
         ]);
 
+        // Update the doctor's information
         $doctorInfo->doctor_name = $validatedData['doctorName'];
         $doctorInfo->gender = $validatedData['gender'];
         $doctorInfo->nationality = $validatedData['nationality'];
