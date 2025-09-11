@@ -27,16 +27,13 @@ Route::post('/doctor/register', [DoctorController::class, 'register']);
 Route::post('/doctor/login', [DoctorController::class, 'login']);
 Route::post('/doctor/check-email', [DoctorController::class, 'checkEmail']);
 
-<<<<<<< HEAD
-Route::post('/doctor-info', [DoctorInfoController::class, 'store']); // For new records
-Route::put('/doctor-info/{email}', [DoctorInfoController::class, 'update']); // Update route (by email) (PUT)
+//Route::post('/doctor-info', [DoctorInfoController::class, 'store']); // For new records
+//Route::put('/doctor-info/{email}', [DoctorInfoController::class, 'update']); // Update route (by email) (PUT)
 Route::get('/ambulances/nearby', [AmbulanceController::class, 'getNearby']);
 Route::post('/ambulances/{id}/request', [AmbulanceController::class, 'requestAmbulance']);
 Route::post('/ambulances/{id}/cancel', [AmbulanceController::class, 'cancelRequest']);
-=======
 // Doctor info CRUD (used by Profile_Doctor & AdminDashboard)
 Route::get('/doctor-info', [DoctorInfoController::class, 'index']);        // ✅ NEW: all doctors
 Route::get('/doctor-info/{email}', [DoctorInfoController::class, 'show']);  // ✅ NEW: doctor by email
 Route::post('/doctor-info', [DoctorInfoController::class, 'store']);
 Route::put('/doctor-info/{email}', [DoctorInfoController::class, 'update']);
->>>>>>> 0e266bfac4db66194fb28d228c0fc52861dcb263
