@@ -6,7 +6,7 @@ return [
         'guard' => 'api',      // you can keep 'api' if you already use it
         'passwords' => 'users',
     ],
-
+//mmm
     'guards' => [
         'api' => [
             'driver' => 'jwt',
