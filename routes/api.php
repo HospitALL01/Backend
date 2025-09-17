@@ -7,6 +7,7 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\DoctorInfoController;
 use App\Http\Controllers\AmbulanceController;
+use App\Http\Controllers\PaymentController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -48,3 +49,4 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/doctor-info/{email}/reviews', [DoctorController::class, 'getReviews']);
 });
 
+Route::post('/payment', [PaymentController::class, 'processPayment']);
