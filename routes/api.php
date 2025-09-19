@@ -64,3 +64,7 @@ Route::post('/payment', [PaymentController::class, 'processPayment']);
 
 // Ambulance Routes
 Route::post('/ambulances/{id}/request', [AmbulanceController::class, 'requestAmbulance']);
+
+// Fetch all appointments for a specific doctor (by doctor_id)
+Route::get('/doctor/{doctorId}/book-appointments', [BookingController::class, 'getDoctorAppointments']);
+
