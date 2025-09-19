@@ -54,3 +54,6 @@ Route::middleware('auth:api')->group(function () {
 });
 
 Route::post('/payment', [PaymentController::class, 'processPayment']);
+
+// Ambulance Routes
+Route::post('/ambulances/{id}/request', [AmbulanceController::class, 'requestAmbulance']);
