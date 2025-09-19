@@ -7,8 +7,15 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\DoctorInfoController;
 use App\Http\Controllers\AmbulanceController;
-use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\BookingController;
+
+// --- Public test route (optional) ---
+Route::get('/ping', function () {
+    return response()->json(['pong' => true]);
+});
+
+Route::post('/book-appointment', [BookingController::class, 'store']);
 
 //chatboT//
 Route::post('/chatbot', [ChatbotController::class, 'chat']);
