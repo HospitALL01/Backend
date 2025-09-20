@@ -21,7 +21,8 @@ CREATE TABLE doctor_info (
     phone VARCHAR(15) NOT NULL,                      -- phone
     email VARCHAR(255) NOT NULL UNIQUE,              -- email (unique to avoid duplicates)
     current_position VARCHAR(255),                   -- currentPosition
-    previous_positions TEXT,                         -- previousPositions
+    previous_positions TEXT,   
+     profile_picture_url VARCHAR(255) NULL,                      -- previousPositions
     created_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,  -- Created timestamp (auto-generated)
     updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- Updated timestamp
 );

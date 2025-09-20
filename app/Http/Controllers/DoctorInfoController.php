@@ -33,6 +33,7 @@ class DoctorInfoController extends Controller
                 'previousPositions' => $d->previous_positions,
                 'created_at'        => $d->created_at,
                 'updated_at'        => $d->updated_at,
+                'profile_picture_url' => $d->profile_picture_url, 
             ];
         });
 
@@ -67,6 +68,7 @@ class DoctorInfoController extends Controller
             'previousPositions' => $doctorInfo->previous_positions,
             'created_at'        => $doctorInfo->created_at,
             'updated_at'        => $doctorInfo->updated_at,
+            'profile_picture_url' => $doctorInfo->profile_picture_url
         ];
 
         return response()->json(['data' => $payload], 200);
@@ -92,6 +94,7 @@ class DoctorInfoController extends Controller
             'email' => 'required|email|max:255',
             'currentPosition' => 'nullable|string|max:255',
             'previousPositions' => 'nullable|string|max:255',
+            'profile_picture' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
         // Check if doctor with the same email exists
@@ -114,9 +117,17 @@ class DoctorInfoController extends Controller
         $doctorInfo->email = $validatedData['email'];
         $doctorInfo->current_position = $validatedData['currentPosition'];
         $doctorInfo->previous_positions = $validatedData['previousPositions'];
+        // ✅ 2. THIS IS WHERE YOU ADD THE FILE UPLOAD LOGIC
+        if ($request->hasFile('profile_picture')) {
+            // Store the file in 'storage/app/public/profile_pictures'
+            $path = $request->file('profile_picture')->store('profile_pictures', 'public');
+            
+            // The asset() helper creates the public URL (e.g., http://localhost/storage/profile_pictures/filename.jpg)
+            $doctorInfo->profile_picture_url = asset('storage/' . $path);
+        }
         $doctorInfo->save();
 
-        return response()->json(['message' => 'Doctor information submitted successfully'], 200);
+        return response()->json(['message' => 'Doctor information submitted successfully', 'data' => $doctorInfo], 201);
     }
 
     /**
@@ -145,6 +156,7 @@ class DoctorInfoController extends Controller
             'email' => 'required|email|max:255',
             'currentPosition' => 'nullable|string|max:255',
             'previousPositions' => 'nullable|string|max:255',
+            'profile_picture' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         // Update the doctor's information
@@ -160,6 +172,19 @@ class DoctorInfoController extends Controller
         $doctorInfo->email = $validatedData['email'];
         $doctorInfo->current_position = $validatedData['currentPosition'];
         $doctorInfo->previous_positions = $validatedData['previousPositions'];
+        $doctorInfo->fill($request->except(['profile_picture', 'email'])); 
+        if ($request->hasFile('profile_picture')) {
+            // Optional: Delete the old picture if it exists to save space
+            if ($doctorInfo->profile_picture_url) {
+                // Parse the old path from the full URL
+                $oldPath = str_replace(asset('storage/'), '', $doctorInfo->profile_picture_url);
+                Storage::disk('public')->delete($oldPath);
+            }
+            
+            // Store the new picture
+            $path = $request->file('profile_picture')->store('profile_pictures', 'public');
+            $doctorInfo->profile_picture_url = asset('storage/' . $path);
+        }
         $doctorInfo->save();
 
         return response()->json(['message' => 'Doctor information updated successfully', 'data' => $doctorInfo], 200);
