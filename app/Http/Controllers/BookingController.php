@@ -13,8 +13,10 @@ use App\Controllers\DoctorController;
 
 class BookingController extends Controller
 {
+
     public function store(Request $request)
     {
+      
         // doctor: id বা email যেকোনো একটি আবশ্যক
         $validator = Validator::make($request->all(), [
             'doctor_id'        => 'nullable|integer|exists:doctors,id',
