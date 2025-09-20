@@ -13,11 +13,10 @@ use App\Controllers\DoctorController;
 
 class BookingController extends Controller
 {
-
     public function store(Request $request)
     {
+         // Log incoming request data for debugging
       
-        // doctor: id বা email যেকোনো একটি আবশ্যক
         $validator = Validator::make($request->all(), [
             'doctor_id'        => 'nullable|integer|exists:doctors,id',
             'doctor_email'     => 'nullable|email',
@@ -82,4 +81,14 @@ class BookingController extends Controller
             'data'    => $booking
         ], 201);
     }
+
+    public function getDoctorAppointments($doctorId)
+{
+    // Fetch all bookings for the given doctor ID
+    $appointments = Booking::where('doctor_id', $doctorId)->get(['patient_name', 'appointment_date']);
+
+    // Return the list of appointments
+    return response()->json($appointments);
+}
+
 }
